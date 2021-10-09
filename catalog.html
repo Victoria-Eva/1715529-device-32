@@ -11,7 +11,7 @@
         </a>
       <div class="user-menu"> 
         <form>
-          <input type="text" name="search" method="get" placeholder="Поиск по сайту">
+          <input type="search" name="search" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
         <ul>
@@ -22,7 +22,7 @@
       </div>
       <nav class="main-menu">
         <ul>
-          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Каталог товаров</a>
             <ul>
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для cелфи</a></li>
@@ -30,7 +30,7 @@
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
+            </ul></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -132,6 +132,7 @@
                   </ul>
                 </fieldset>      
                 <button class="button" type="submit">Показать</button>
+              </form>
                 <form class="sorting-type">
                     <label class="visually-hidden" for="sorting">Сортировка:</label>
                     <select class="select-control" id="sorting" name="sorting">
@@ -210,7 +211,9 @@
     <footer class="page-footer">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-contacts-logo" src="" alt="Логотип Интернет-магазин «Девайс»">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="" alt="Логотип Интернет-магазин «Девайс»">
+        </a>
         <address class="footer-contacts-address">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
