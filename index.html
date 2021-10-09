@@ -9,7 +9,7 @@
       <a class="page-header_logo" href="index.html"> <img src="" alt="Логотип Интернет-магазин «Девайс»">Device</a>
       <div class="user-menu"> 
         <form>
-          <input type="text" name="search" method="get" placeholder="Поиск по сайту">
+          <input type="search" name="search" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
         <ul>
@@ -20,15 +20,15 @@
       </div>
       <nav class="main-menu">
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
-            <ul>
+          <li><a href="catalog.html">Каталог товаров</a>
+            <ul class="sub-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для cелфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
+            </ul></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -45,20 +45,12 @@
            жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
            <a href="#">Подробнее</a>
-           <table>
              <dl>
                <dt>Дальность полета</dt>
                  <dd>800 м</dd>
                <dt>Радиус поражения</dt>
                  <dd>50 м</dd>
              </dl>
-           </table>
-          <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующий товар</span>
-          </button>
         </div>
         <div class="item">
           <img class="slider-image" src="" alt="Фитнес-браслет" >
@@ -67,18 +59,10 @@
             правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
            <a href="#">Подробнее</a>
-           <table>
-             <dl>
+            <dl>
                <dt>Без подзарядки</dt>
                  <dd>48 часов</dd>
-             </dl>
-           </table>
-          <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующий товар</span>
-          </button>
+            </dl>
         </div>
         <div class="item">
           <img class="slider-image" src="" alt="Палка для селфи" >
@@ -87,7 +71,6 @@
             как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
            <a href="#">Подробнее</a>
-           <table>
              <dl>
                <dt>Длина палки</dt>
                 <dd>8,5 м</dd>
@@ -96,14 +79,13 @@
               <dt>Материал</dt>
                 <dd>Карбон</dd>
              </dl>
-           </table>
+        </div>
           <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий товар</span>
           </button>
           <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующий товар</span>
           </button>
-        </div>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -133,25 +115,31 @@
           <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="visually-hidden">Дополнительные услуги</h2>
-        <ul class="services-list">
-          <li class="services-item">
-            <h3>Доставка</h3>
-            <span class="services-name">Доставка</span>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-item">
-            <h3>Гарантия</h3>
-            <span class="services-name">Гарантия</span>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-item">
-            <h3>Кредит</h3>
-            <span class="services-name">Кредит</span>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </li>
-        </ul>
+      <section class="support">
+        <div class="support__container">
+          <input class="support__btn-1 visually-hidden" type="radio" name="support-toggle" id="support-1" checked="checked">
+          <input class="support__btn-2 visually-hidden" type="radio" name="support-toggle" id="support-2">
+          <input class="support__btn-3 visually-hidden" type="radio" name="support-toggle" id="support-3">
+          <div class="support__nav">
+            <label for="support-1">Доставка</label>
+            <label for="support-2">Гарантия</label>
+            <label for="support-3">Кредит</label>
+          </div>
+          <ul class="support__text">
+            <li class="support__item support__item--1">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="support__item support__item--2">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            </li>
+            <li class="support__item support__item--3">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="delivery">
         <button class="button">Доставим редкий товар под заказ</button>
@@ -193,9 +181,7 @@
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
         </p>
-        <button class="button newsletter-button" type="submit">
-          <span>Подписаться</span>
-        </button>
+        <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>
     </section>
     </main>
