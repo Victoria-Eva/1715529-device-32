@@ -7,11 +7,12 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="navigation"> 
+      <div class="navigation">
+    <div class="header-logo-container">
       <a class="page-header_logo" href="index.html">
         <img class="page-header_logo" src="img/header/logo-header.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс»"></a>
-      <div class="user-menu">
-    
+    </div>   
+    <div class="user-menu">
         <form class="search">
           <input type="search" name="search" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
@@ -71,16 +72,20 @@
         <div class="item">
           <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер" >
           <div class="item-desc">
-          <p class="item-numder">01</p>
+          <p class="item-numder" align="right">01</p>
           <p class="item-title">Порхает как бабочка,<br>
            жалит как пчела!</p>
           <p class="item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
            <a class="button" href="#">Подробнее</a>
-             <dl>
+             <dl class="descriptions">
+               <div class="descriptions-item">
                <dt class="description">Дальность полета</dt>
-                 <dd class="value">800 м</dd>
+                 <dd class="value">800 м</dd></div>
+                 <div>
+                  <div class="descriptions-item">
                <dt class="description">Радиус поражения</dt>
-                 <dd class="value">50 м</dd>
+                 <dd class="value">50 м</dd></div>
+                  </div>
              </dl>
             </div>
         </div>
@@ -148,6 +153,7 @@
         </ul>
       </section>
       <section class="support">
+
         <div class="support-container">
           <input class="support-btn-1 visually-hidden" type="radio" name="support-toggle" id="support-1" checked="checked">
           <input class="support-btn-2 visually-hidden" type="radio" name="support-toggle" id="support-2">
@@ -206,9 +212,11 @@
         </ul>
         <a class="button" href="#">Напишите нам</a>
      </section></div>
+   </div>
      <section class="newsletter">
+       <div class="newsletter-container">
       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p class="newsletter-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="newsletter-email">
           <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -217,14 +225,14 @@
         <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>      
       <p class="newsletter-free">Это бесплатно</p>
-    </section>
     </div>
+    </section>
     </main>
     <footer class="page-footer">
        <div class="page-footer-container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="page-header_logo" href="index.html"><img src="img/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс»"></a>
+        <a class="page-footer_logo" href="index.html"><img src="img/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс»"></a>
         <address class="footer-contacts-address">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
@@ -258,9 +266,9 @@
         </ul>
       </section>
       </div>
-      <div>
+      <div class="footer-contact-phone">
         <address class="footer-contacts-phone">
-          <a class="contacts-phone-footer" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-phone-footer" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
         <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
     </div>
