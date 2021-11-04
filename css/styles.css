@@ -724,6 +724,7 @@ li {
 
   .inner-header-title {
       margin: 0;
+      margin-right: 60px;
       margin-bottom: 14px;
   }
 
@@ -745,4 +746,31 @@ li {
     padding: 0;
     box-sizing: border-box;
     border: 3px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    margin-bottom: 51px;
   }
+
+  .pagination {
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 77px;
+    height: 70px;
+  }
+
+  .pagination-link {
+      padding: 20px 15px;
+  }
+
+.pagination-item:first-child {
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.pagination-item:last-child {
+    margin-left: auto;
+    margin-right: 15px;
+}
