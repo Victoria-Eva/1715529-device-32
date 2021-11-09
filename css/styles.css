@@ -655,7 +655,7 @@ footer {
 
 .filter {
     width: 330px;
-    padding-top: 25px;
+    align-self: center;
     padding-left: 64px;
     background-color: #dbdbdb
 }
@@ -669,7 +669,6 @@ footer {
     padding-top: 70px;
     padding-right: 60.5px;
     padding-left: 62px;
-    opacity: .99;
     width: 330px;
     background-color: #eee
 }
@@ -681,14 +680,16 @@ footer {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     width: 832px;
-    padding: 17px 0 0 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 72px;
     background-color: #ebebeb
 }
 
 .catalog-list {
     width: 760px;
-    padding-top: 70px;
-    padding-left: 74px;
+    padding-top: 69px;
+    padding-left: 72px;
     background-color: #fff
 }
 
@@ -704,12 +705,13 @@ footer {
 }
 
 .sorting-title {
-    padding-top: 8px;
-    padding-bottom: 25px
+    margin-right: 45px;
 }
 
 .product-list {
     padding: 0;
+    margin: 0;
+    margin-bottom: 44px;
     display: flex;
     flex-wrap: wrap;
     grid-column-gap: 40px;
@@ -757,7 +759,7 @@ footer {
     opacity: 1;
 }
 
-.product-card-link {
+.product-card-title-link {
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
@@ -771,6 +773,7 @@ footer {
     font-weight: normal;
     line-height: 21px;
     text-align: right;
+    padding-top: 2px;
 }
 
 li {
@@ -834,3 +837,22 @@ li {
 .group3 {
     margin-bottom: 51px;
 }
+
+
+.product-card {
+    display: grid;
+    grid-template-columns: 280px min-content;
+    grid-template-rows: 380px min-content;
+    row-gap: 32px;
+}
+
+.product-card-link {
+    grid-column: 1/-1;
+    margin-bottom: 32px;
+}
+
+.product-card-title {
+    margin: 0;
+    font-size: 18px;
+}
+
